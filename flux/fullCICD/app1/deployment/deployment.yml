@@ -6,22 +6,22 @@ metadata:
   creationTimestamp: 2023-11-15T11:58:04.000Z
   generation: 2
   labels:
-    app: dep-app2
-  name: dep-app2
+    app: dep-app1
+  name: dep-app1
   namespace: default
 spec:
-  replicas: 5
+  replicas: 1
   selector:
     matchLabels:
-      app: dep-app2
+      app: dep-app1
   template:
     metadata:
       labels:
-        app: dep-app2
+        app: dep-app1
     spec:
       containers:
         - image: 'app1:0.0.2'
-          name: dep-app2
+          name: dep-app1
           ports:
             - containerPort: 8000
               name: http
