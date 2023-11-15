@@ -20,7 +20,7 @@ spec:
         app: dep-app1
     spec:
       containers:
-        - image: 'app1:0.0.0'
+        - image: 'app1:0.0.1'
           name: dep-app1
           ports:
             - containerPort: 8000
