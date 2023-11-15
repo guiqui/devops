@@ -10,7 +10,7 @@ metadata:
   name: dep-app2
   namespace: default
 spec:
-  replicas: 3
+  replicas: 5
   selector:
     matchLabels:
       app: dep-app2
