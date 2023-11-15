@@ -83,7 +83,7 @@ flux bootstrap github \
   --repository=devops \
   --path=flux/fullCICD \
   --personal \
-  --branch fluxcd-2022
+  --branch main
 
 flux check
 

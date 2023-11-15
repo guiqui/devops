@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    deployment.kubernetes.io/revision: '2'
+  creationTimestamp: 2023-11-15T11:58:04.000Z
+  generation: 2
+  labels:
+    app: dep-app1
+  name: dep-app1
+  namespace: default
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: dep-app1
+  template:
+    metadata:
+      labels:
+        app: dep-app1
+    spec:
+      containers:
+        - image: 'app1:0.0.0'
+          name: dep-app1
+          ports:
+            - containerPort: 8000
+              name: http
+              protocol: TCP
+
